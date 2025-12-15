@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+nav{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left li{
+    list-style-type: none;
+    margin-inline: 30px;
+}
+
+.left li a{
+    text-decoration: none;
+    color: rgb(175, 135, 135);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.7s;
+}
+
+.left li a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: gold;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+nav img{
+    width: 50px;
+    height: 50px;
+    animation-name: move;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 100px;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-inline: 10px;
+    cursor: pointer;
+}
+button:hover{
+    border-radius: 0px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid white;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 0% 100%;
+}
+input:focus{
+    border-color: rgb(192, 78, 192);
+    
+    outline: none;
+}
+input::placeholder{
+    color: white;
+}
+section{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 130px;
+}
+
+.le{
+    /* border: 2px solid black; */
+    width: 500px;
+    /* margin-top: 100px; */
+}
+
+.le h1{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    text-shadow: 1px 7px 8px;
+    animation-name: welcome;
+    /* animation-timing-function: ease-in; */
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    color: white;
+}
+
+@keyframes welcome {
+    from{
+        transform: translateX(-100px);
+        opacity: 0%;
+    }
+    to{
+        
+    }
+}
+
+
+
+span{
+    color: red;
+}
+
+.le h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    text-shadow: 1px 7px 8px;
+    animation-name: h4;
+    animation-timing-function: ease-in;
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    color: white;
+}
+
+@keyframes h4 {
+    from{
+        transform: translate(-100px);
+        opacity: 0%;
+    }
+}
+
+.le p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(184, 170, 170);
+    align-items: justify;
+    
+    width: 620px;
+    animation-name: para;
+    /* animation-timing-function: ease-in; */
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: 1;
+    animation-duration: 12s;
+}
+
+
+
+@keyframes para {
+    from{
+        transform: translate(-100px);
+        opacity: 0%;
+    }
+}
+
+.le p{
+    width: 500px;
+    font-size: 22px;
+    text-align: justify;
+    padding: 30px;
+    /* margin-top: 20px; */
+    text-shadow: 3px 2px 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.ri{
+    /* border: 2px solid black; */
+    width: 500px;
+}
+.ri img{
+    width: 500px;
+    box-shadow: 0px 19px 38px black ,0px 19px 38px black;
+    border-radius: 20px;
+}
+
+
+@keyframes move {
+    50%{
+        transform: translateY(-4px);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+    
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.366);
+    width: 110%;
+    padding: 2px;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a{
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dropdown-content a:hover{
+    color: gold;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    transition: 0.7s;
+}
+
+button .bt{
+    background-color: none;
+}
+
+.bt{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.bt .b{
+    width: 140px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 0px;
+}
+.b:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+h3{
+    color: rgb(175, 135, 135);
+    cursor: pointer;
+    margin-top: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    transition: 0.5s;
+}
+
+h3:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: gold;
+
+}
+/* Fullscreen Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark Filter / Overlay */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* filter darkness */
+    z-index: 1;
+}
+
+/* Nav above video */
+nav {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 15px 40px;
+}
+
+/* Links visible */
+nav a, nav h3 {
+    color: white;
+    text-decoration: none;
+}
+
+/* Search */
+nav input {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid #fff;
+    color: white;
+}
+
+nav input::placeholder {
+    color: #ddd;
+}
+
+nav button {
+    background: #00bcd4;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.blackhole-bg .video-overlay {
+    background: rgba(0, 0, 0, 0.75);
+}
+.solar-system .video-overlay {
+    background: rgba(0, 0, 0, 0.75);
+}
+nav {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+nav a:hover {
+    color: #00e5ff;
+}
+
+/* ========================= */
+/* REALISTIC SOLAR SYSTEM 🌌 */
+/* ========================= */
+
+.solar-system {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 120px auto;
+    z-index: 2;
+}
+
+/* ☀ SUN */
+.sun {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle, #fff59d, #ff9800, #f57c00);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 80px 30px rgba(255,140,0,0.8);
+}
+
+/* ORBITS */
+.orbit {
+    position: absolute;
+    border: 1px dashed rgba(255,255,255,0.15);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate linear infinite;
+}
+
+/* PLANET BASE */
+.planet {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+/* MERCURY */
+.mercury { width: 140px; height: 140px; animation-duration: 6s; }
+.mercury-p {
+    width: 10px; height: 10px;
+    background: radial-gradient(circle, #bdbdbd, #757575);
+}
+
+/* VENUS */
+.venus { width: 200px; height: 200px; animation-duration: 9s; }
+.venus-p {
+    width: 16px; height: 16px;
+    background: radial-gradient(circle, #ffd180, #ff8f00);
+}
+
+/* EARTH */
+.earth { width: 280px; height: 280px; animation-duration: 12s; }
+.earth-p {
+    width: 18px; height: 18px;
+    background: radial-gradient(circle, #4fc3f7, #1a237e);
+    box-shadow: 0 0 12px #4fc3f7;
+}
+
+/* MARS */
+.mars { width: 350px; height: 350px; animation-duration: 15s; }
+.mars-p {
+    width: 14px; height: 14px;
+    background: radial-gradient(circle, #ff8a65, #bf360c);
+}
+
+/* JUPITER */
+.jupiter { width: 450px; height: 450px; animation-duration: 22s; }
+.jupiter-p {
+    width: 34px; height: 34px;
+    background: radial-gradient(circle, #ffccbc, #8d6e63);
+}
+
+/* SATURN */
+.saturn { width: 560px; height: 560px; animation-duration: 28s; }
+.saturn-p {
+    width: 28px; height: 28px;
+    background: radial-gradient(circle, #ffe0b2, #bcaaa4);
+    position: relative;
+}
+
+/* SATURN RING */
+.saturn-p .ring {
+    position: absolute;
+    width: 55px;
+    height: 14px;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+}
+
+/* URANUS */
+.uranus { width: 650px; height: 650px; animation-duration: 34s; }
+.uranus-p {
+    width: 22px; height: 22px;
+    background: radial-gradient(circle, #b3e5fc, #0277bd);
+}
+
+/* NEPTUNE */
+.neptune { width: 720px; height: 720px; animation-duration: 40s; }
+.neptune-p {
+    width: 22px; height: 22px;
+    background: radial-gradient(circle, #7986cb, #1a237e);
+}
+
+/* ROTATION */
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+
+/* ===================== */
+/* SPACE CONTACT FORM 🌌 */
+/* ===================== */
+
+.contact-section {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.contact-box {
+    width: 420px;
+    padding: 40px;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 229, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.contact-box h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #00e5ff;
+}
+
+.contact-box p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* INPUTS */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s;
+    background: rgba(0,0,0,0.7);
+    padding: 0 6px;
+}
+
+/* FLOAT LABEL EFFECT */
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: #00e5ff;
+}
+
+/* SEND BUTTON */
+.send-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00e5ff, #0066ff);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.send-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #00e5ff;
+}
+
+
+/* ============================ */
+/* BLACK HOLE INTERACTIVE 🕳️ */
+/* ============================ */
+
+.blackhole-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 80px;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* TEXT */
+.bh-text {
+    width: 50%;
+}
+
+.bh-text h1 {
+    font-size: 48px;
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+.bh-text h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.bh-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+/* VISUAL */
+.bh-visual {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BLACK HOLE CORE */
+.black-hole {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, #000 55%, #111 70%, transparent 75%);
+    border-radius: 50%;
+    box-shadow: 0 0 80px rgba(0,0,0,0.9);
+    animation: pulse 4s infinite ease-in-out;
+}
+
+/* ACCRETION DISK RINGS */
+.black-hole .ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #00e5ff;
+    filter: blur(0.5px);
+    animation: spin linear infinite;
+}
+
+.r1 { animation-duration: 6s; }
+.r2 { animation-duration: 10s; transform: rotate(45deg); }
+.r3 { animation-duration: 14s; transform: rotate(90deg); }
+
+/* INTERACTION */
+.black-hole:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 120px rgba(0,229,255,0.6);
+}
+
+/* HINT */
+.hint {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ANIMATIONS */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 60px rgba(0,0,0,0.9); }
+    50% { box-shadow: 0 0 100px rgba(0,0,0,1); }
+}
+
+
