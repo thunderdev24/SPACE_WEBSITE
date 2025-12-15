@@ -43,7 +43,6 @@
     astronomy basics
     astronomy binoculars
     astronomy books pdf free download
-    astronomy books pdf for beginners
     astronomy blue oyster cult
     astronomy branches astronomy encyclopedia
     astronomy etymology
@@ -78,6 +77,7 @@
     <link rel="stylesheet" href="science.css">
 </head>
 <body>
+    
     <div class="video-container">
         <video autoplay muted loop playsinline>
             <source src="space.mp4" type="video/mp4">
@@ -87,7 +87,7 @@
     <nav>
         <img src="icons8-planet-50.png" alt="logo">
         <div class="left">
-            <li><a href="#">Home</a></li>
+            <li><a href="">Home</a></li>
             
 
             <div class="dropdown">
@@ -98,11 +98,19 @@
                     <a href="pulsar.html">Pulsar Stars</a>
                 </div>
             </div>
-
-
+            
+            
+            
             <li><a href="contact.html">Contact</a></li>
         </div>
+        
+        <button id="musicBtn" type="button">🔊 Music ON</button>
 
+        <video id="bgMusic" loop playsinline preload="auto">
+            <source src="blood-moon-1080-publer.io.mp4" type="audio/mpeg">
+        </video>
+        
+        
 
         <div class="right">
             <input type="text" placeholder="Search Your Topics">
@@ -128,7 +136,7 @@
             <img src="bBc.gif" alt="solar">
         </div>
     </section>
-     
 
+    <script src="script.js"></script>
 </body>
 </html>

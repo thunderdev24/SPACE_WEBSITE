@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="science.css">
 </head>
 <body>
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    
     <div class="video-container">
         <video autoplay muted loop playsinline>
             <source src="space.mp4" type="video/mp4">
@@ -31,7 +35,12 @@
 
             <li><a href="">Contact</a></li>
         </div>
+        <button id="musicBtn" type="button">🔊 Music ON</button>
 
+        <video id="bgMusic" loop playsinline preload="auto">
+            <source src="blood-moon-1080-publer.io.mp4" type="audio/mpeg">
+        </video>
+        
 
         <div class="right">
             <input type="text" placeholder="Search Your Topics">
@@ -66,6 +75,8 @@
         </div>
     
     </section>
-    
+
+
+    <script src="script.js"></script>
 </body>
 </html>
